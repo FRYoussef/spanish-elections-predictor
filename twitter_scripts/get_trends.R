@@ -2,15 +2,12 @@ library(httr)
 library(XML)
 install.packages("httpuv")
 library(httpuv)
-install.packages("dplyr") # Instalar de manipulación de dataframes "dplyr"
+install.packages("dplyr") # Instalar de manipulaciÃ³n de dataframes "dplyr"
 library(dplyr)
 library(twitteR)
 
 
-getwd()
-setwd("C:/Users/laufu/Documents/Cuarto/Segundo cuatri/MIN/Proyecto/ElectionsPredictor-Complex_Networks")
-
-source ("Interconexión con Twitter.R")
+source ("twitter_conexion.R")
 
 available_trends <- availableTrendLocations()
 available_trends <-filter(available_trends, country == "Spain")

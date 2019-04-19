@@ -7,10 +7,15 @@ library(dplyr)
 library(twitteR)
 
 
-source ("twitter_conexion.R")
+source ("twitter_scripts/twitter_conexion.R")
+
+#print(closestTrendLocations(lat = "41.65", long = "-0.87"))
+#print(getTrends(woeid = 779063, exclude=NULL))
+#print(searchTwitter('#DebateARV', n=500, geocode='41.65,-0.87,500km'))
+
 
 available_trends <- availableTrendLocations()
-available_trends <-filter(available_trends, country == "Spain")
+available_trends <- filter(available_trends, country == "Spain")
 
 
 

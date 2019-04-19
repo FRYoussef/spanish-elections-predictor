@@ -1,12 +1,12 @@
 # Author: Youssef El Faqir El Rhazoui
 # Date: 01/04/2019
-# Distributed under the terms of the GPLv3 license.
+# You have to set the workspace on the root repo path
 
 rm(list=ls())
 
 # Get csv data to join
-citiesRaw <- read.table(file = "MUNICIPIOS.csv", header = TRUE, sep = ";", fileEncoding = "UTF-8")
-provinceRaw <- read.table(file = "PROVINCIAS.csv", header = TRUE, sep = ";", fileEncoding = "UTF-8")
+citiesRaw <- read.table(file = "cities_mining/MUNICIPIOS.csv", header = TRUE, sep = ";", fileEncoding = "UTF-8")
+provinceRaw <- read.table(file = "cities_mining/PROVINCIAS.csv", header = TRUE, sep = ";", fileEncoding = "UTF-8")
 
 # Let's clean the dataframes
 cities <- data.frame(
@@ -19,18 +19,21 @@ cities <- data.frame(
 )
 rm(citiesRaw)
 
-# Add region name to cities
-region <- vector("character", nrow(cities))
+# Let's filter cities up to 50,000 of population
+cities <- cities[cities$Population >= 50000, ]
+
+
+cities[, c("Autonomous_Community")] <- NA
 
 for (i in 1:nrow(cities)){
-  row <- provinceRaw[which(cities[i, ]$Cod_Province == provinceRaw$COD_PROV), ]
-  region[i] <- row[4]
+  row <- cities[i, ]
+  row <- provinceRaw[which(row$Cod_Province == provinceRaw$COD_PROV), ]
+  cities[i, ]$Autonomous_Community <- row[4]
 }
-
-cities["Autonomous_Community"] <- region
+cities$Autonomous_Community <- vapply(cities$Autonomous_Community, paste, collapse = ", ", character(1L))
 cities$Cod_Province <- NULL
 
 # Save the dataframe in a file
-dir.create("../datawarehouse")
-write.table(cities, row.names = FALSE, file = "../datawarehouse/cities.csv", sep = ";", 
+dir.create("datawarehouse")
+write.table(cities, row.names = FALSE, file = "datawarehouse/cities.csv", sep = ";", 
             fileEncoding = "UTF-8")

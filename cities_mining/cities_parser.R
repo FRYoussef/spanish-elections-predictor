@@ -1,6 +1,6 @@
 # Author: Youssef El Faqir El Rhazoui
 # Date: 01/04/2019
-# You have to set the workspace on the root repo path
+# You have to set the workspace on the repo root path
 
 rm(list=ls())
 

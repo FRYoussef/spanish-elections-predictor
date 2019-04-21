@@ -42,6 +42,7 @@ for(i in 1:nrow(cities)){
   
   trends <- rbind(trends, city_trend)
 }
+print(sprintf("Collected %d trends of %d cities", nrow(trends), nrow(cities)))
 
 # Time to search tweets
 tweets <- data.frame()
@@ -65,7 +66,7 @@ for(i in 1:nrow(trends)){
 
     tweets <- rbind(tweets, aux)
   }
-  print(sprintf("Collected %d tweets from %d/%d trends", nrow(trend_tweets), i, nrow(trends)))
+  print(sprintf("Collected %d tweets from %d of %d trends", nrow(tweets), i, nrow(trends)))
 }
 
 

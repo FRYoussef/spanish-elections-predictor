@@ -11,7 +11,7 @@ source ("twitter_scripts/twitter_conexion.R")
 # Get cities dataframe
 cities <- read.csv("datawarehouse/cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE)
 
-# Check if already have trends
+# Check if already are trends
 date <- Sys.Date()
 str <- paste("datawarehouse/trends_", date, ".csv", sep="")
 previous_trends <- data.frame()
@@ -20,7 +20,7 @@ if (file.exists(str)) {
   print(sprintf("'%s' already exist, appending new trends...", str))
 }
 
-# Let's get cities trends
+# Let's get city trends
 city_trend <- data.frame()
 trends <- data.frame()
 
@@ -28,7 +28,7 @@ for(i in 1:nrow(cities)){
   city_trend <- getTrends(woeid = cities[i, ]$Woeid)
   city_trend[, c("City")] <- cities[i, ]$Name
   
-  # if there are previous trends, we'll fliter news
+  # if there are previous trends, we'll filter news
   if(nrow(previous_trends) > 0) {
     filter_ <- data.frame()
     for(j in 1:nrow(city_trend)) {

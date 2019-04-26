@@ -27,3 +27,16 @@
 "contratos basura";0;1;0;1;1;0;0;0;0;0
 "ofrecer vivienda";0;0;0;0;1;0;1;0;0;0
 "subida impuestos";0;1;0;1;0;0;0;0;0;0
+"alquiler";0;1;0;0;0;0;0;0;0;0
+"expropiar";0;0;0;0;0;0;0;1;0;0
+"maternidad";1;0;1;0;0;0;0;0;0;0
+"feminismo";0;0;1;0;0;0;0;0;0;0
+"conservador";0;1;0;0;0;0;0;0;0;0
+"muerte digna";0;1;1;0;1;0;1;0;0;0
+"maltrato";0;0;0;1;0;0;1;0;0;0
+"concertinas";0;0;0;1;0;0;0;0;0;0
+"asilo";0;0;0;0;1;0;0;0;0;0
+"refugio";0;0;0;0;1;0;0;0;0;0
+"ultraderecha";0;0;0;0;0;0;0;0;0;1
+"LGTBI";0;0;0;0;1;0;0;0;0;1
+"educacion publica";0;0;0;0;0;0;1;0;0;0

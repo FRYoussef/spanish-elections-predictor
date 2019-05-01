@@ -12,12 +12,12 @@ if (!is.installed("twitteR")){
 library(twitteR)
 
 
-consumerKey <- ""
+consumerKey <- "9wqUbq3u3ZgBq0ImLvTTuRbzr"
 
-consumerSecret <- ""
+consumerSecret <- "tbGNaYl7JiCHd2O0nGbu4dXZQGkcGgjnx0XSgT4QHShXejpjSD"
 
-accessToken <- ""
+accessToken <- "1095974486179004416-PFsOuHQ5XfVrw7ve3JSSqtDG3tUYoy"
 
-accessSecret <- ""
+accessSecret <- "hAg6VlYOzdibhtx3rLqdLYGk2SU7cJ4riuMRTdNE2wINX"
 
 setup_twitter_oauth(consumerKey, consumerSecret, accessToken, accessSecret)

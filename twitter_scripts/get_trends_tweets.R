@@ -11,9 +11,9 @@ source ("twitter_scripts/twitter_conexion.R")
 # Get cities dataframe
 cities <- read.csv("datawarehouse/cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE)
 
-# Check if already are trends
+# Check if there are today's trends
 date <- Sys.Date()
-str <- paste("datawarehouse/trends_", date, ".csv", sep="")
+str <- paste("datawarehouse/raw/trends/trends_", date, ".csv", sep="")
 previous_trends <- data.frame()
 if (file.exists(str)) {
   previous_trends <- read.csv(str, sep = ";", fileEncoding = "UTF-8", header=TRUE)
@@ -72,5 +72,5 @@ for(i in 1:nrow(trends)){
 
 # Save tweets and trends in a file
 write.table(trends, row.names = FALSE, file = str, sep = ";", fileEncoding = "UTF-8", append = TRUE)
-str <- paste("datawarehouse/tweets_", date, ".csv", sep="")
+str <- paste("datawarehouse/raw/tweets/tweets_", date, ".csv", sep="")
 write.table(tweets, row.names = FALSE, file = str, sep = ";", fileEncoding = "UTF-8", append = TRUE)

@@ -1,3 +1,5 @@
+# You have to set the workspace on the repo root path
+
 rm(list=ls())
 
 if (!is.installed("tm")){
@@ -6,8 +8,6 @@ if (!is.installed("tm")){
 
 library(tm)
 require(tm)
-getwd()
-setwd("C:/Users/laufu/Documents/Cuarto/Segundo cuatri/MIN/Proyecto/ElectionsPredictor-Complex_Networks")
 
 
 cities <- read.csv("datawarehouse/cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
@@ -17,7 +17,7 @@ def <- data.frame(matrix(ncol = 6, nrow = 0))
 colnames(def) <- c("City", "Support_PP", "Support_PSOE", "Support_Cs", "Support_Podemos", "Support_VOX")
 for (day in 19:28){
   name1 <- paste(day, "csv", sep=".")
-  name <- paste("datawarehouse/clean_tweets_2019-04", name1, sep="-")
+  name <- paste("datawarehouse/clean_data/clean_tweets_2019-04", name1, sep="-")
   clean_tweets <- read.csv(name, sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
   df <- data.frame(matrix(ncol = 6, nrow = 0))
   colnames(df) <- c("City", "Support_PP", "Support_PSOE", "Support_Cs", "Support_Podemos", "Support_VOX")

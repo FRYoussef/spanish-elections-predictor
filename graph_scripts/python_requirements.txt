@@ -1,0 +1,2 @@
+networkx==2.3
+pandas==0.24.2

@@ -45,7 +45,6 @@ for (file in files){
     
     dff <- data.frame(
       City = city_name,
-      Woeid = woeid,
       Support_PP = 0,
       Support_PSOE = 0,
       Support_Cs = 0,

@@ -1,11 +1,11 @@
-"City";"Support_PP";"Support_PSOE";"Support_Cs";"Support_Podemos";"Support_VOX"
-"Bilbao";-23;16;13;27;-11
-"Las Palmas de Gran Canaria";5;7;16;0;13
-"Palma";7;4;9;-3;9
-"Murcia";-8;11;4;10;-1
-"Málaga";0;4;0;2;2
-"Zaragoza";0;0;0;0;2
-"Sevilla";0;7;12;3;-3
-"València";0;4;10;0;7
-"Barcelona";7;7;27;2;14
-"Madrid";5;9;45;12;0
+"City";"Woeid";"Support_PP";"Support_PSOE";"Support_Cs";"Support_Podemos";"Support_VOX"
+"Bilbao";754519;16;13;27;-11;0
+"Las Palmas de Gran Canaria";764819;7;16;0;13;0
+"Palma";769300;4;9;-3;9;0
+"Murcia";768018;11;4;10;-1;0
+"Málaga";766356;4;0;2;2;0
+"Zaragoza";779063;0;0;0;2;0
+"Sevilla";774508;7;12;3;-3;0
+"València";776688;4;10;0;7;0
+"Barcelona";753699;7;27;2;14;0
+"Madrid";766278;9;45;12;0;0

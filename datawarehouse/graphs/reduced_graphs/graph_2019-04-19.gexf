@@ -15,7 +15,7 @@
     </attributes>
     <meta>
       <creator>NetworkX 2.3</creator>
-      <lastmodified>09/05/2019</lastmodified>
+      <lastmodified>11/05/2019</lastmodified>
     </meta>
     <nodes>
       <node id="754542" label="Bilbao">
@@ -25,11 +25,11 @@
           <attvalue for="2" value="345110" />
           <attvalue for="3" value="-2.92" />
           <attvalue for="4" value="43.25" />
-          <attvalue for="5" value="4" />
-          <attvalue for="6" value="14" />
-          <attvalue for="7" value="50" />
-          <attvalue for="8" value="22" />
-          <attvalue for="9" value="15" />
+          <attvalue for="5" value="17" />
+          <attvalue for="6" value="20" />
+          <attvalue for="7" value="66" />
+          <attvalue for="8" value="32" />
+          <attvalue for="9" value="31" />
         </attvalues>
       </node>
       <node id="764814" label="Las Palmas de Gran Canaria">
@@ -39,11 +39,11 @@
           <attvalue for="2" value="377650" />
           <attvalue for="3" value="-15.41" />
           <attvalue for="4" value="28.09" />
-          <attvalue for="5" value="-48" />
-          <attvalue for="6" value="121" />
-          <attvalue for="7" value="175" />
-          <attvalue for="8" value="138" />
-          <attvalue for="9" value="-3" />
+          <attvalue for="5" value="20" />
+          <attvalue for="6" value="142" />
+          <attvalue for="7" value="228" />
+          <attvalue for="8" value="169" />
+          <attvalue for="9" value="48" />
         </attvalues>
       </node>
       <node id="769293" label="Palma">
@@ -53,11 +53,11 @@
           <attvalue for="2" value="406492" />
           <attvalue for="3" value="2.65" />
           <attvalue for="4" value="39.57" />
-          <attvalue for="5" value="-79" />
-          <attvalue for="6" value="110" />
-          <attvalue for="7" value="132" />
-          <attvalue for="8" value="143" />
-          <attvalue for="9" value="-21" />
+          <attvalue for="5" value="-40" />
+          <attvalue for="6" value="156" />
+          <attvalue for="7" value="164" />
+          <attvalue for="8" value="197" />
+          <attvalue for="9" value="13" />
         </attvalues>
       </node>
       <node id="768026" label="Murcia">
@@ -67,11 +67,11 @@
           <attvalue for="2" value="443243" />
           <attvalue for="3" value="-1.12" />
           <attvalue for="4" value="37.98" />
-          <attvalue for="5" value="9" />
-          <attvalue for="6" value="67" />
-          <attvalue for="7" value="144" />
-          <attvalue for="8" value="62" />
-          <attvalue for="9" value="16" />
+          <attvalue for="5" value="37" />
+          <attvalue for="6" value="100" />
+          <attvalue for="7" value="168" />
+          <attvalue for="8" value="104" />
+          <attvalue for="9" value="41" />
         </attvalues>
       </node>
       <node id="766356" label="Málaga">
@@ -81,11 +81,11 @@
           <attvalue for="2" value="569002" />
           <attvalue for="3" value="-4.41" />
           <attvalue for="4" value="36.72" />
-          <attvalue for="5" value="-37" />
-          <attvalue for="6" value="114" />
-          <attvalue for="7" value="214" />
-          <attvalue for="8" value="124" />
-          <attvalue for="9" value="-3" />
+          <attvalue for="5" value="20" />
+          <attvalue for="6" value="147" />
+          <attvalue for="7" value="244" />
+          <attvalue for="8" value="177" />
+          <attvalue for="9" value="18" />
         </attvalues>
       </node>
       <node id="779063" label="Zaragoza">
@@ -95,11 +95,11 @@
           <attvalue for="2" value="664938" />
           <attvalue for="3" value="-0.87" />
           <attvalue for="4" value="41.65" />
-          <attvalue for="5" value="-87" />
-          <attvalue for="6" value="107" />
-          <attvalue for="7" value="141" />
-          <attvalue for="8" value="152" />
-          <attvalue for="9" value="-42" />
+          <attvalue for="5" value="-45" />
+          <attvalue for="6" value="146" />
+          <attvalue for="7" value="160" />
+          <attvalue for="8" value="215" />
+          <attvalue for="9" value="-7" />
         </attvalues>
       </node>
       <node id="774508" label="Sevilla">
@@ -109,11 +109,11 @@
           <attvalue for="2" value="689434" />
           <attvalue for="3" value="-5.99" />
           <attvalue for="4" value="37.38" />
-          <attvalue for="5" value="-12" />
-          <attvalue for="6" value="48" />
-          <attvalue for="7" value="62" />
-          <attvalue for="8" value="47" />
-          <attvalue for="9" value="-7" />
+          <attvalue for="5" value="5" />
+          <attvalue for="6" value="70" />
+          <attvalue for="7" value="88" />
+          <attvalue for="8" value="78" />
+          <attvalue for="9" value="10" />
         </attvalues>
       </node>
       <node id="776688" label="València">
@@ -123,11 +123,11 @@
           <attvalue for="2" value="787808" />
           <attvalue for="3" value="-0.37" />
           <attvalue for="4" value="39.47" />
-          <attvalue for="5" value="-53" />
-          <attvalue for="6" value="118" />
-          <attvalue for="7" value="159" />
-          <attvalue for="8" value="110" />
-          <attvalue for="9" value="-59" />
+          <attvalue for="5" value="-4" />
+          <attvalue for="6" value="169" />
+          <attvalue for="7" value="190" />
+          <attvalue for="8" value="172" />
+          <attvalue for="9" value="-18" />
         </attvalues>
       </node>
       <node id="753692" label="Barcelona">
@@ -137,11 +137,11 @@
           <attvalue for="2" value="1620809" />
           <attvalue for="3" value="2.17" />
           <attvalue for="4" value="41.38" />
-          <attvalue for="5" value="-31" />
-          <attvalue for="6" value="85" />
-          <attvalue for="7" value="164" />
-          <attvalue for="8" value="101" />
-          <attvalue for="9" value="-22" />
+          <attvalue for="5" value="-12" />
+          <attvalue for="6" value="127" />
+          <attvalue for="7" value="186" />
+          <attvalue for="8" value="152" />
+          <attvalue for="9" value="1" />
         </attvalues>
       </node>
       <node id="766273" label="Madrid">
@@ -151,11 +151,11 @@
           <attvalue for="2" value="3182981" />
           <attvalue for="3" value="-3.68" />
           <attvalue for="4" value="40.4" />
-          <attvalue for="5" value="-14" />
-          <attvalue for="6" value="36" />
-          <attvalue for="7" value="81" />
-          <attvalue for="8" value="51" />
-          <attvalue for="9" value="-10" />
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="51" />
+          <attvalue for="7" value="92" />
+          <attvalue for="8" value="78" />
+          <attvalue for="9" value="1" />
         </attvalues>
       </node>
     </nodes>

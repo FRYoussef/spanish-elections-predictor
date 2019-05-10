@@ -32,7 +32,7 @@ for (file in files){
   myCorpus <- tm_map(myCorpus, tolower)
   
   #function that remove accents, file encode changes the str
-  removeAccents <- content_transformer(function(x) chartr("αινσϊ", "aeiou", x))
+  removeAccents <- content_transformer(function(x) chartr("αινσϊρ", "aeioun", x))
   myCorpus <- tm_map(myCorpus, removeAccents)
   
   #function that remove URLs
@@ -41,8 +41,8 @@ for (file in files){
   myCorpus<-tm_map(myCorpus,removePunctuation,ucp=TRUE)
   
   #remove words without a lexical load
-  #myStopwords<-stopwords('spanish')
-  #myCorpus<-tm_map(myCorpus,removeWords,myStopwords)
+  myStopwords<-stopwords('spanish')
+  myCorpus<-tm_map(myCorpus,removeWords,myStopwords)
   
   #eliminar caracteres raros
   removeCRT<-function(x)gsub("(<[[:alnum:]]*([[:punct:]][[:alnum:]]*)?>)*","",x)

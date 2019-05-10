@@ -9,7 +9,7 @@ import os
 import networkx as nx
 import pandas as pd
 
-data_path = 'datawarehouse'
+data_path = 'datawarehouse/'
 
 def normalize(x: int, values: list) -> int:
     if max(values) - min(values) == 0:

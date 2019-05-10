@@ -32,7 +32,7 @@ for (file in files){
   myCorpus <- tm_map(myCorpus, tolower)
   
   #function that remove accents, file encode changes the str
-  removeAccents <- content_transformer(function(x) chartr("áéíóú", "aeiou", x))
+  removeAccents <- content_transformer(function(x) chartr("ï¿½ï¿½ï¿½ï¿½ï¿½", "aeiou", x))
   myCorpus <- tm_map(myCorpus, removeAccents)
   
   #function that remove URLs
@@ -58,7 +58,7 @@ for (file in files){
   
   clean_corpus <- strsplit(file, "tweets_")
   clean_corpus <- paste("clean_tweets", clean_corpus[[1]][2], sep="_")
-  clean_corpus <- paste("datawarehouse/clean_data", clean_corpus, sep="/")
+  clean_corpus <- paste("datawarehouse/tweets_cleaned", clean_corpus, sep="/")
   
   print(sprintf("Writing in: %s", clean_corpus))
   write.table(tweets, row.names = FALSE, file = clean_corpus, sep = ";", fileEncoding = "UTF-8")

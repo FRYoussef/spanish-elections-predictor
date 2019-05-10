@@ -1,5 +1,5 @@
 """
-   Descp: This file is used to generate graphs from cities.csv, trends.csv, and count_list.csv
+   Descp: This file is used to generate graphs from top10_population_cities.csv, trends.csv, and count_list.csv
 
    Created on: 08-may-2019
    Copyright 2019 Youssef 'FRYoussef' El Faqir El Rhazoui
@@ -19,7 +19,7 @@ def normalize(x: int, values: list) -> int:
 
 
 # Let's load cities as a dataframe
-df = pd.read_csv(os.path.join(data_path, "cities.csv"), sep=";", header=0)
+df = pd.read_csv(os.path.join(data_path, "top10_population_cities.csv"), sep=";", header=0)
 
 # Graph's nodes filling
 print("Adding cities as graph's nodes ...")
@@ -83,7 +83,7 @@ for graph in graph_list:
 # Asign politician support
 # P_support = sum((support_i + support_j) * norm_weight_i_j)
 for i, graph in enumerate(graph_list, 0):
-    file_name = os.path.join(data_path, 'count_list', f"count_list_{graph.graph['date']}.csv")
+    file_name = os.path.join(data_path, 'raw', 'count_list', f"count_list_{graph.graph['date']}.csv")
     df = pd.read_csv(file_name, sep=";", header=0)
 
     for n_j in graph.nodes:

@@ -9,7 +9,7 @@ library(twitteR)
 source ("twitter_scripts/twitter_conexion.R")
 
 # Get cities dataframe
-cities <- read.csv("datawarehouse/cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE)
+cities <- read.csv("datawarehouse/top10_population_cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE)
 
 # Check if there are today's trends
 date <- Sys.Date()

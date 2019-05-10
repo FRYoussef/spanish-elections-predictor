@@ -10,13 +10,13 @@ library(tm)
 require(tm)
 
 
-cities <- read.csv("datawarehouse/cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
-files <- list.files(path="datawarehouse/clean_data", pattern="*.csv", full.names=TRUE, recursive=FALSE)
+cities <- read.csv("datawarehouse/top10_population_cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
+files <- list.files(path="datawarehouse/tweets_cleaned", pattern="*.csv", full.names=TRUE, recursive=FALSE)
 
 #load the words list
-words <- read.csv("datawarehouse/wordsList_v2.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
+words <- read.csv("datawarehouse/word_list/wordList_v2.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
 
-out_path <- "datawarehouse/count_list"
+out_path <- "datawarehouse/raw/count_list"
 
 for (file in files){
   

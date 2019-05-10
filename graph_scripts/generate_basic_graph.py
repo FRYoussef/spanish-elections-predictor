@@ -48,6 +48,11 @@ for i, filename in enumerate(os.listdir(os.path.join(data_path, 'raw', 'trends')
     date = date.split('.')[0]
     graph_list.append(base_graph.copy())
     graph_list[i].graph['date'] = date
+    graph_list[i].graph['supportPP']      = 0
+    graph_list[i].graph['supportPSOE']    = 0
+    graph_list[i].graph['supportCs']      = 0 
+    graph_list[i].graph['supportPodemos'] = 0
+    graph_list[i].graph['supportVox']     = 0
 
     # load trends
     df = pd.read_csv(os.path.join(data_path, 'raw', 'trends', filename), sep=";", header=0)
@@ -96,11 +101,19 @@ for i, graph in enumerate(graph_list, 0):
             edge_id = (n_j << 32) + n_k
             edge_id = edge_id if edge_id in norm_list[i] else (n_k << 32) + n_j
 
+            # city political support
             graph.nodes[n_j]['supportPP']      += int((int(df_j['Support_PP'].iloc[0]) + int(df_k['Support_PP'].iloc[0])) * norm_list[i][edge_id])
             graph.nodes[n_j]['supportPSOE']    += int((int(df_j['Support_PSOE'].iloc[0]) + int(df_k['Support_PSOE'].iloc[0])) * norm_list[i][edge_id])
             graph.nodes[n_j]['supportCs']      += int((int(df_j['Support_Cs'].iloc[0]) + int(df_k['Support_Cs'].iloc[0])) * norm_list[i][edge_id])
             graph.nodes[n_j]['supportPodemos'] += int((int(df_j['Support_Podemos'].iloc[0]) + int(df_k['Support_Podemos'].iloc[0])) * norm_list[i][edge_id])
             graph.nodes[n_j]['supportVox']     += int((int(df_j['Support_VOX'].iloc[0]) + int(df_k['Support_VOX'].iloc[0])) * norm_list[i][edge_id])
+
+            # statal political support
+            graph.graph['supportPP']      += graph.nodes[n_j]['supportPP']
+            graph.graph['supportPSOE']    += graph.nodes[n_j]['supportPSOE'] 
+            graph.graph['supportCs']      += graph.nodes[n_j]['supportCs'] 
+            graph.graph['supportPodemos'] += graph.nodes[n_j]['supportPodemos']
+            graph.graph['supportVox']     += graph.nodes[n_j]['supportVox']
 
 #write result
 print('Writing results ...')
@@ -109,7 +122,7 @@ if not os.path.exists(result_path):
     os.makedirs(result_path)
 
 for graph in graph_list:
-    file_name = f"graph_{graph.graph['date']}.gexf"
-    nx.write_gexf(graph, os.path.join(result_path, file_name))
+    file_name = f"graph_{graph.graph['date']}.graphml"
+    nx.write_graphml_xml(graph, os.path.join(result_path, file_name))
 
 print(f"Finished, data stored in: {result_path}")

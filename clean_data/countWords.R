@@ -11,15 +11,13 @@ library(tm)
 require(tm)
 
 
-#load the cities
-cities <- read.csv("datawarehouse/cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
-#List of files cleaning tweets
-files <- list.files(path="datawarehouse/clean_data/", pattern="*.csv", full.names=TRUE, recursive=FALSE)
+cities <- read.csv("datawarehouse/top10_population_cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
+files <- list.files(path="datawarehouse/tweets_cleaned", pattern="*.csv", full.names=TRUE, recursive=FALSE)
+
 
 #load the words list
-words <- read.csv("datawarehouse/wordsList_v2.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
-
-out_path <- "datawarehouse/count_list"
+words <- read.csv("datawarehouse/word_list/wordList_v2.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
+out_path <- "datawarehouse/raw/count_list"
 
 for (file in files){
   #load cleaning tweets
@@ -31,7 +29,6 @@ for (file in files){
   
   #count words for each city.
   for(i in 1:nrow(cities)) {
-    print(i)
     woeid <- cities[i, ]$Woeid
     city_name <- cities[i, ]$Name
     

@@ -25,13 +25,14 @@ for (file in files){
   myCorpus<-Corpus(VectorSource(tweets$Tweets))
   
   #remove puntuation
-  #myCorpus1<-tm_map(myCorpus,removePunctuation,ucp=TRUE)
+  myCorpus1<-tm_map(myCorpus,removePunctuation,ucp=TRUE)
   
   #remove capitals
   #for(i in 1:nTweets){myCorpus[[i]]$content<-tolower(myCorpus[[i]]$content)}
   myCorpus <- tm_map(myCorpus, tolower)
   
   #function that remove accents, file encode changes the str
+
   removeAccents <- content_transformer(function(x) chartr("αινσϊρ", "aeioun", x))
   myCorpus <- tm_map(myCorpus, removeAccents)
   
@@ -58,7 +59,7 @@ for (file in files){
   
   clean_corpus <- strsplit(file, "tweets_")
   clean_corpus <- paste("clean_tweets", clean_corpus[[1]][2], sep="_")
-  clean_corpus <- paste("datawarehouse/clean_data", clean_corpus, sep="/")
+  clean_corpus <- paste("datawarehouse/tweets_cleaned", clean_corpus, sep="/")
   
   print(sprintf("Writing in: %s", clean_corpus))
   write.table(tweets, row.names = FALSE, file = clean_corpus, sep = ";", fileEncoding = "UTF-8")

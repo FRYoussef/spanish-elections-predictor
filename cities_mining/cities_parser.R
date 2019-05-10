@@ -53,5 +53,5 @@ cities[, c("Radius")] <- c("60km", "130km", "150km", "40km", "40km", "100km", "4
 
 # Save the dataframe in a file
 dir.create("datawarehouse")
-write.table(cities, row.names = FALSE, file = "datawarehouse/cities.csv", sep = ";", 
+write.table(cities, row.names = FALSE, file = "datawarehouse/top10_population_cities.csv", sep = ";", 
             fileEncoding = "UTF-8")

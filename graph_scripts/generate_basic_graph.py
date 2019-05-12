@@ -11,6 +11,8 @@ import pandas as pd
 
 data_path = 'datawarehouse'
 
+print (os.getcwd())
+os.chdir("C:/Users/laufu/Documents/Cuarto/Segundo cuatri/MIN/Proyecto/ElectionsPredictor-Complex_Networks")
 
 def normalize(x: int, values: list) -> int:
     if max(values) - min(values) == 0:

@@ -29,7 +29,7 @@
       <data key="d11">-2.92</data>
       <data key="d12">43.25</data>
       <data key="d13">-53</data>
-      <data key="d14">110</data>
+      <data key="d14">105</data>
       <data key="d15">94</data>
       <data key="d16">112</data>
       <data key="d17">-36</data>
@@ -43,7 +43,7 @@
       <data key="d11">-15.41</data>
       <data key="d12">28.09</data>
       <data key="d13">-154</data>
-      <data key="d14">305</data>
+      <data key="d14">295</data>
       <data key="d15">198</data>
       <data key="d16">318</data>
       <data key="d17">-139</data>
@@ -57,7 +57,7 @@
       <data key="d11">2.65</data>
       <data key="d12">39.57</data>
       <data key="d13">-5</data>
-      <data key="d14">175</data>
+      <data key="d14">165</data>
       <data key="d15">225</data>
       <data key="d16">149</data>
       <data key="d17">-4</data>
@@ -71,7 +71,7 @@
       <data key="d11">-1.12</data>
       <data key="d12">37.98</data>
       <data key="d13">-22</data>
-      <data key="d14">82</data>
+      <data key="d14">79</data>
       <data key="d15">75</data>
       <data key="d16">69</data>
       <data key="d17">-27</data>
@@ -85,7 +85,7 @@
       <data key="d11">-4.41</data>
       <data key="d12">36.72</data>
       <data key="d13">-74</data>
-      <data key="d14">242</data>
+      <data key="d14">232</data>
       <data key="d15">265</data>
       <data key="d16">206</data>
       <data key="d17">-86</data>
@@ -99,7 +99,7 @@
       <data key="d11">-0.87</data>
       <data key="d12">41.65</data>
       <data key="d13">-175</data>
-      <data key="d14">256</data>
+      <data key="d14">244</data>
       <data key="d15">151</data>
       <data key="d16">294</data>
       <data key="d17">-107</data>
@@ -113,7 +113,7 @@
       <data key="d11">-5.99</data>
       <data key="d12">37.38</data>
       <data key="d13">-30</data>
-      <data key="d14">124</data>
+      <data key="d14">118</data>
       <data key="d15">156</data>
       <data key="d16">120</data>
       <data key="d17">-4</data>
@@ -127,7 +127,7 @@
       <data key="d11">-0.37</data>
       <data key="d12">39.47</data>
       <data key="d13">-64</data>
-      <data key="d14">166</data>
+      <data key="d14">157</data>
       <data key="d15">244</data>
       <data key="d16">194</data>
       <data key="d17">-72</data>
@@ -141,7 +141,7 @@
       <data key="d11">2.17</data>
       <data key="d12">41.38</data>
       <data key="d13">-77</data>
-      <data key="d14">211</data>
+      <data key="d14">203</data>
       <data key="d15">171</data>
       <data key="d16">209</data>
       <data key="d17">-65</data>
@@ -155,7 +155,7 @@
       <data key="d11">-3.68</data>
       <data key="d12">40.4</data>
       <data key="d13">0</data>
-      <data key="d14">49</data>
+      <data key="d14">46</data>
       <data key="d15">71</data>
       <data key="d16">39</data>
       <data key="d17">6</data>
@@ -297,7 +297,7 @@
     </edge>
     <data key="d0">2019-04-28</data>
     <data key="d1">-3568</data>
-    <data key="d2">9156</data>
+    <data key="d2">8763</data>
     <data key="d3">8336</data>
     <data key="d4">9027</data>
     <data key="d5">-2972</data>

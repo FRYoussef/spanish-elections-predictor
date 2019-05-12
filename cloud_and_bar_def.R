@@ -35,6 +35,7 @@ require(zoo)
 getwd()
 setwd("C:/Users/laufu/Documents/Cuarto/Segundo cuatri/MIN/Proyecto/ElectionsPredictor-Complex_Networks")
 words <- read.csv("datawarehouse/word_list/wordList_v2.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
+length_list <- nrow(words)
 dir <- getwd()
 path_count <- "datawarehouse/raw/count_list/"
 dir <- paste(dir, path_count, sep="/")
@@ -46,7 +47,7 @@ directories <- directories[1:10]
 
 for (directory in directories){
   files <- list.files(path=directory, pattern="*.csv", full.names=TRUE, recursive=FALSE)
-  df <- data.frame(matrix(ncol = 2, nrow = 88))
+  df <- data.frame(matrix(ncol = 2, nrow = length_list))
   colnames(df) <- c("Word", "Frec")
   df$Word = words$Palabra
   df$Frec = 0
@@ -68,7 +69,7 @@ for (directory in directories){
   bar_file <- paste(bar_file, "png", sep=".")
   png(bar_file, width=12, height=8, units="in", res=300)
   df_bar <- df[df$Frec > 100,]
-  barplot(df$Frec, las = 2, names.arg = df$Word,col ="lightblue", main ="Most frequent words",ylab = "Word frequencies")
+  barplot(df_bar$Frec, las = 2, names.arg = df_bar$Word,col ="lightblue", main ="Most frequent words",ylab = "Word frequencies")
   dev.off()
   setwd(dir)
   

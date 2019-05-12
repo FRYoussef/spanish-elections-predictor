@@ -37,7 +37,8 @@ for (file in files){
     
     #form a corpus with the previous data(the same woeid).
     myCorpus <- Corpus(VectorSource(tweets_city$text))
-    myCorpus<-tm_map(myCorpus,removePunctuation,ucp=TRUE)
+    myCorpus<-tm_map(myCorpus,removePunctuation)
+    
     #get the terms and their frequency
     terms <- TermDocumentMatrix(myCorpus)
     matrix_terms = as.matrix(terms)

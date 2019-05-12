@@ -28,11 +28,11 @@
       <data key="d10">345110</data>
       <data key="d11">-2.92</data>
       <data key="d12">43.25</data>
-      <data key="d13">-5</data>
-      <data key="d14">20</data>
-      <data key="d15">6</data>
-      <data key="d16">20</data>
-      <data key="d17">-4</data>
+      <data key="d13">-8</data>
+      <data key="d14">17</data>
+      <data key="d15">3</data>
+      <data key="d16">16</data>
+      <data key="d17">-7</data>
     </node>
     <node id="764814">
       <data key="d6">764814</data>
@@ -42,11 +42,11 @@
       <data key="d10">377650</data>
       <data key="d11">-15.41</data>
       <data key="d12">28.09</data>
-      <data key="d13">35</data>
-      <data key="d14">164</data>
-      <data key="d15">206</data>
-      <data key="d16">157</data>
-      <data key="d17">-70</data>
+      <data key="d13">7</data>
+      <data key="d14">131</data>
+      <data key="d15">190</data>
+      <data key="d16">135</data>
+      <data key="d17">-102</data>
     </node>
     <node id="769293">
       <data key="d6">769293</data>
@@ -56,11 +56,11 @@
       <data key="d10">406492</data>
       <data key="d11">2.65</data>
       <data key="d12">39.57</data>
-      <data key="d13">65</data>
-      <data key="d14">80</data>
-      <data key="d15">178</data>
-      <data key="d16">100</data>
-      <data key="d17">45</data>
+      <data key="d13">34</data>
+      <data key="d14">48</data>
+      <data key="d15">160</data>
+      <data key="d16">67</data>
+      <data key="d17">-5</data>
     </node>
     <node id="768026">
       <data key="d6">768026</data>
@@ -70,11 +70,11 @@
       <data key="d10">443243</data>
       <data key="d11">-1.12</data>
       <data key="d12">37.98</data>
-      <data key="d13">6</data>
-      <data key="d14">26</data>
-      <data key="d15">33</data>
-      <data key="d16">21</data>
-      <data key="d17">11</data>
+      <data key="d13">0</data>
+      <data key="d14">21</data>
+      <data key="d15">28</data>
+      <data key="d16">16</data>
+      <data key="d17">-1</data>
     </node>
     <node id="766356">
       <data key="d6">766356</data>
@@ -84,11 +84,11 @@
       <data key="d10">569002</data>
       <data key="d11">-4.41</data>
       <data key="d12">36.72</data>
-      <data key="d13">56</data>
-      <data key="d14">84</data>
-      <data key="d15">186</data>
-      <data key="d16">69</data>
-      <data key="d17">45</data>
+      <data key="d13">17</data>
+      <data key="d14">78</data>
+      <data key="d15">183</data>
+      <data key="d16">67</data>
+      <data key="d17">-26</data>
     </node>
     <node id="779063">
       <data key="d6">779063</data>
@@ -98,11 +98,11 @@
       <data key="d10">664938</data>
       <data key="d11">-0.87</data>
       <data key="d12">41.65</data>
-      <data key="d13">24</data>
-      <data key="d14">92</data>
-      <data key="d15">132</data>
-      <data key="d16">101</data>
-      <data key="d17">14</data>
+      <data key="d13">2</data>
+      <data key="d14">74</data>
+      <data key="d15">124</data>
+      <data key="d16">77</data>
+      <data key="d17">-18</data>
     </node>
     <node id="774508">
       <data key="d6">774508</data>
@@ -112,11 +112,11 @@
       <data key="d10">689434</data>
       <data key="d11">-5.99</data>
       <data key="d12">37.38</data>
-      <data key="d13">-19</data>
-      <data key="d14">66</data>
-      <data key="d15">83</data>
-      <data key="d16">76</data>
-      <data key="d17">3</data>
+      <data key="d13">-29</data>
+      <data key="d14">52</data>
+      <data key="d15">70</data>
+      <data key="d16">62</data>
+      <data key="d17">-20</data>
     </node>
     <node id="776688">
       <data key="d6">776688</data>
@@ -126,11 +126,11 @@
       <data key="d10">787808</data>
       <data key="d11">-0.37</data>
       <data key="d12">39.47</data>
-      <data key="d13">26</data>
-      <data key="d14">110</data>
-      <data key="d15">122</data>
-      <data key="d16">92</data>
-      <data key="d17">19</data>
+      <data key="d13">3</data>
+      <data key="d14">101</data>
+      <data key="d15">109</data>
+      <data key="d16">74</data>
+      <data key="d17">-18</data>
     </node>
     <node id="753692">
       <data key="d6">753692</data>
@@ -140,11 +140,11 @@
       <data key="d10">1620809</data>
       <data key="d11">2.17</data>
       <data key="d12">41.38</data>
-      <data key="d13">2</data>
-      <data key="d14">115</data>
-      <data key="d15">177</data>
-      <data key="d16">145</data>
-      <data key="d17">-28</data>
+      <data key="d13">-35</data>
+      <data key="d14">120</data>
+      <data key="d15">151</data>
+      <data key="d16">138</data>
+      <data key="d17">-75</data>
     </node>
     <node id="766273">
       <data key="d6">766273</data>
@@ -154,11 +154,11 @@
       <data key="d10">3182981</data>
       <data key="d11">-3.68</data>
       <data key="d12">40.4</data>
-      <data key="d13">-44</data>
-      <data key="d14">111</data>
-      <data key="d15">77</data>
-      <data key="d16">123</data>
-      <data key="d17">-27</data>
+      <data key="d13">-59</data>
+      <data key="d14">106</data>
+      <data key="d15">68</data>
+      <data key="d16">108</data>
+      <data key="d17">-48</data>
     </node>
     <edge source="754542" target="764814">
       <data key="d18">79</data>
@@ -296,10 +296,10 @@
       <data key="d18">83</data>
     </edge>
     <data key="d0">2019-04-22</data>
-    <data key="d1">1172</data>
-    <data key="d2">3963</data>
-    <data key="d3">5874</data>
-    <data key="d4">4020</data>
-    <data key="d5">89</data>
+    <data key="d1">165</data>
+    <data key="d2">3201</data>
+    <data key="d3">5368</data>
+    <data key="d4">3284</data>
+    <data key="d5">-1453</data>
   </graph>
 </graphml>

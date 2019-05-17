@@ -10,8 +10,6 @@ if (!"tm" %in% rownames(installed.packages())){
 library(tm)
 require(tm)
 
-getwd()
-setwd("C:/Users/laufu/Documents/Cuarto/Segundo cuatri/MIN/Proyecto/ElectionsPredictor-Complex_Networks")
 
 cities <- read.csv("datawarehouse/top10_population_cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
 files <- list.files(path="datawarehouse/tweets_cleaned", pattern="*.csv", full.names=TRUE, recursive=FALSE)

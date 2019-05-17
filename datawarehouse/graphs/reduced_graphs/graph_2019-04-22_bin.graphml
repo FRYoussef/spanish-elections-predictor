@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="weight" attr.type="long" for="edge" id="d18" />
+  <key attr.name="supportVox" attr.type="long" for="node" id="d17" />
+  <key attr.name="supportPodemos" attr.type="long" for="node" id="d16" />
+  <key attr.name="supportCs" attr.type="long" for="node" id="d15" />
+  <key attr.name="supportPSOE" attr.type="long" for="node" id="d14" />
+  <key attr.name="supportPP" attr.type="long" for="node" id="d13" />
+  <key attr.name="latitude" attr.type="double" for="node" id="d12" />
+  <key attr.name="longitude" attr.type="double" for="node" id="d11" />
+  <key attr.name="population" attr.type="long" for="node" id="d10" />
+  <key attr.name="region" attr.type="string" for="node" id="d9" />
+  <key attr.name="province" attr.type="string" for="node" id="d8" />
+  <key attr.name="label" attr.type="string" for="node" id="d7" />
+  <key attr.name="id" attr.type="long" for="node" id="d6" />
+  <key attr.name="supportVox" attr.type="long" for="graph" id="d5" />
+  <key attr.name="supportPodemos" attr.type="long" for="graph" id="d4" />
+  <key attr.name="supportCs" attr.type="long" for="graph" id="d3" />
+  <key attr.name="supportPSOE" attr.type="long" for="graph" id="d2" />
+  <key attr.name="supportPP" attr.type="long" for="graph" id="d1" />
+  <key attr.name="date" attr.type="string" for="graph" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="754542">
+      <data key="d6">754542</data>
+      <data key="d7">Bilbao</data>
+      <data key="d8">Bizkaia</data>
+      <data key="d9">País Vasco/Euskadi</data>
+      <data key="d10">345110</data>
+      <data key="d11">-2.92</data>
+      <data key="d12">43.25</data>
+      <data key="d13">0</data>
+      <data key="d14">1</data>
+      <data key="d15">0</data>
+      <data key="d16">2</data>
+      <data key="d17">0</data>
+    </node>
+    <node id="764814">
+      <data key="d6">764814</data>
+      <data key="d7">Las Palmas de Gran Canaria</data>
+      <data key="d8">Las Palmas</data>
+      <data key="d9">Canarias</data>
+      <data key="d10">377650</data>
+      <data key="d11">-15.41</data>
+      <data key="d12">28.09</data>
+      <data key="d13">19</data>
+      <data key="d14">35</data>
+      <data key="d15">14</data>
+      <data key="d16">30</data>
+      <data key="d17">21</data>
+    </node>
+    <node id="769293">
+      <data key="d6">769293</data>
+      <data key="d7">Palma</data>
+      <data key="d8">Illes Balears</data>
+      <data key="d9">Illes Balears</data>
+      <data key="d10">406492</data>
+      <data key="d11">2.65</data>
+      <data key="d12">39.57</data>
+      <data key="d13">24</data>
+      <data key="d14">35</data>
+      <data key="d15">18</data>
+      <data key="d16">43</data>
+      <data key="d17">40</data>
+    </node>
+    <node id="768026">
+      <data key="d6">768026</data>
+      <data key="d7">Murcia</data>
+      <data key="d8">Murcia</data>
+      <data key="d9">Región de Murcia</data>
+      <data key="d10">443243</data>
+      <data key="d11">-1.12</data>
+      <data key="d12">37.98</data>
+      <data key="d13">0</data>
+      <data key="d14">5</data>
+      <data key="d15">2</data>
+      <data key="d16">6</data>
+      <data key="d17">4</data>
+    </node>
+    <node id="766356">
+      <data key="d6">766356</data>
+      <data key="d7">Málaga</data>
+      <data key="d8">Málaga</data>
+      <data key="d9">Andalucía</data>
+      <data key="d10">569002</data>
+      <data key="d11">-4.41</data>
+      <data key="d12">36.72</data>
+      <data key="d13">19</data>
+      <data key="d14">32</data>
+      <data key="d15">23</data>
+      <data key="d16">35</data>
+      <data key="d17">40</data>
+    </node>
+    <node id="779063">
+      <data key="d6">779063</data>
+      <data key="d7">Zaragoza</data>
+      <data key="d8">Zaragoza</data>
+      <data key="d9">Aragón</data>
+      <data key="d10">664938</data>
+      <data key="d11">-0.87</data>
+      <data key="d12">41.65</data>
+      <data key="d13">11</data>
+      <data key="d14">18</data>
+      <data key="d15">5</data>
+      <data key="d16">29</data>
+      <data key="d17">18</data>
+    </node>
+    <node id="774508">
+      <data key="d6">774508</data>
+      <data key="d7">Sevilla</data>
+      <data key="d8">Sevilla</data>
+      <data key="d9">Andalucía</data>
+      <data key="d10">689434</data>
+      <data key="d11">-5.99</data>
+      <data key="d12">37.38</data>
+      <data key="d13">5</data>
+      <data key="d14">15</data>
+      <data key="d15">9</data>
+      <data key="d16">15</data>
+      <data key="d17">16</data>
+    </node>
+    <node id="776688">
+      <data key="d6">776688</data>
+      <data key="d7">València</data>
+      <data key="d8">València/Valencia</data>
+      <data key="d9">Comunitat Valenciana</data>
+      <data key="d10">787808</data>
+      <data key="d11">-0.37</data>
+      <data key="d12">39.47</data>
+      <data key="d13">15</data>
+      <data key="d14">32</data>
+      <data key="d15">18</data>
+      <data key="d16">35</data>
+      <data key="d17">28</data>
+    </node>
+    <node id="753692">
+      <data key="d6">753692</data>
+      <data key="d7">Barcelona</data>
+      <data key="d8">Barcelona</data>
+      <data key="d9">Cataluña/Catalunya</data>
+      <data key="d10">1620809</data>
+      <data key="d11">2.17</data>
+      <data key="d12">41.38</data>
+      <data key="d13">17</data>
+      <data key="d14">21</data>
+      <data key="d15">14</data>
+      <data key="d16">35</data>
+      <data key="d17">26</data>
+    </node>
+    <node id="766273">
+      <data key="d6">766273</data>
+      <data key="d7">Madrid</data>
+      <data key="d8">Madrid</data>
+      <data key="d9">Comunidad de Madrid</data>
+      <data key="d10">3182981</data>
+      <data key="d11">-3.68</data>
+      <data key="d12">40.4</data>
+      <data key="d13">8</data>
+      <data key="d14">12</data>
+      <data key="d15">7</data>
+      <data key="d16">18</data>
+      <data key="d17">13</data>
+    </node>
+    <edge source="754542" target="764814">
+      <data key="d18">79</data>
+    </edge>
+    <edge source="754542" target="769293">
+      <data key="d18">79</data>
+    </edge>
+    <edge source="754542" target="768026">
+      <data key="d18">80</data>
+    </edge>
+    <edge source="754542" target="766356">
+      <data key="d18">79</data>
+    </edge>
+    <edge source="754542" target="779063">
+      <data key="d18">78</data>
+    </edge>
+    <edge source="754542" target="774508">
+      <data key="d18">81</data>
+    </edge>
+    <edge source="754542" target="776688">
+      <data key="d18">79</data>
+    </edge>
+    <edge source="754542" target="753692">
+      <data key="d18">78</data>
+    </edge>
+    <edge source="754542" target="766273">
+      <data key="d18">80</data>
+    </edge>
+    <edge source="764814" target="769293">
+      <data key="d18">99</data>
+    </edge>
+    <edge source="764814" target="768026">
+      <data key="d18">81</data>
+    </edge>
+    <edge source="764814" target="766356">
+      <data key="d18">99</data>
+    </edge>
+    <edge source="764814" target="779063">
+      <data key="d18">98</data>
+    </edge>
+    <edge source="764814" target="774508">
+      <data key="d18">85</data>
+    </edge>
+    <edge source="764814" target="776688">
+      <data key="d18">99</data>
+    </edge>
+    <edge source="764814" target="753692">
+      <data key="d18">91</data>
+    </edge>
+    <edge source="764814" target="766273">
+      <data key="d18">84</data>
+    </edge>
+    <edge source="769293" target="768026">
+      <data key="d18">81</data>
+    </edge>
+    <edge source="769293" target="766356">
+      <data key="d18">99</data>
+    </edge>
+    <edge source="769293" target="779063">
+      <data key="d18">98</data>
+    </edge>
+    <edge source="769293" target="774508">
+      <data key="d18">85</data>
+    </edge>
+    <edge source="769293" target="776688">
+      <data key="d18">99</data>
+    </edge>
+    <edge source="769293" target="753692">
+      <data key="d18">91</data>
+    </edge>
+    <edge source="769293" target="766273">
+      <data key="d18">84</data>
+    </edge>
+    <edge source="768026" target="766356">
+      <data key="d18">81</data>
+    </edge>
+    <edge source="768026" target="779063">
+      <data key="d18">80</data>
+    </edge>
+    <edge source="768026" target="774508">
+      <data key="d18">81</data>
+    </edge>
+    <edge source="768026" target="776688">
+      <data key="d18">81</data>
+    </edge>
+    <edge source="768026" target="753692">
+      <data key="d18">80</data>
+    </edge>
+    <edge source="768026" target="766273">
+      <data key="d18">79</data>
+    </edge>
+    <edge source="766356" target="779063">
+      <data key="d18">98</data>
+    </edge>
+    <edge source="766356" target="774508">
+      <data key="d18">85</data>
+    </edge>
+    <edge source="766356" target="776688">
+      <data key="d18">99</data>
+    </edge>
+    <edge source="766356" target="753692">
+      <data key="d18">91</data>
+    </edge>
+    <edge source="766356" target="766273">
+      <data key="d18">84</data>
+    </edge>
+    <edge source="779063" target="774508">
+      <data key="d18">84</data>
+    </edge>
+    <edge source="779063" target="776688">
+      <data key="d18">98</data>
+    </edge>
+    <edge source="779063" target="753692">
+      <data key="d18">90</data>
+    </edge>
+    <edge source="779063" target="766273">
+      <data key="d18">83</data>
+    </edge>
+    <edge source="774508" target="776688">
+      <data key="d18">85</data>
+    </edge>
+    <edge source="774508" target="753692">
+      <data key="d18">84</data>
+    </edge>
+    <edge source="774508" target="766273">
+      <data key="d18">86</data>
+    </edge>
+    <edge source="776688" target="753692">
+      <data key="d18">91</data>
+    </edge>
+    <edge source="776688" target="766273">
+      <data key="d18">84</data>
+    </edge>
+    <edge source="753692" target="766273">
+      <data key="d18">83</data>
+    </edge>
+    <data key="d0">2019-04-22</data>
+    <data key="d1">580</data>
+    <data key="d2">1029</data>
+    <data key="d3">517</data>
+    <data key="d4">1160</data>
+    <data key="d5">977</data>
+  </graph>
+</graphml>

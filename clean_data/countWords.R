@@ -10,13 +10,15 @@ if (!"tm" %in% rownames(installed.packages())){
 library(tm)
 require(tm)
 
+getwd()
+setwd("C:/Users/laufu/Documents/Cuarto/Segundo cuatri/MIN/Proyecto/ElectionsPredictor-Complex_Networks")
 
 cities <- read.csv("datawarehouse/top10_population_cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
 files <- list.files(path="datawarehouse/tweets_cleaned", pattern="*.csv", full.names=TRUE, recursive=FALSE)
 
 
 #load the words list
-words <- read.csv("datawarehouse/word_list/wordList_v2.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
+words <- read.csv("datawarehouse/word_list/wordList.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
 out_path <- "datawarehouse/raw/count_list"
 
 for (file in files){
@@ -129,7 +131,7 @@ for (file in files){
     #load the frecuency terms in a file
     day_results <- strsplit(file, "clean_tweets_")
     name <- paste("frec_terms", city_name, sep="_")
-    name <- paste(name, "csv", sep=".")
+    name <- paste(name, "bin.csv", sep="")
     day_results <- strsplit(day_results[[1]][2], ".csv")
     out_path1 <- paste(out_path, day_results[[1]][1], sep="/")
     name <- paste(out_path1, name, sep="/")
@@ -139,7 +141,7 @@ for (file in files){
   
   # Let's save the day "X" results
   day_results <- strsplit(file, "clean_tweets_")
-  day_results <- paste("count_list", day_results[[1]][2], sep="_")
+  day_results <- paste("count_list_bin", day_results[[1]][2], sep="_")
   day_results <- paste(out_path, day_results, sep="/")
   print(sprintf("Writing in: %s", day_results))
   write.table(df, row.names = FALSE, file = day_results, sep = ";", fileEncoding="UTF-8") 

@@ -11,6 +11,8 @@ import pandas as pd
 
 data_path = 'datawarehouse'
 
+print (os.getcwd())
+os.chdir("C:/Users/laufu/Documents/Cuarto/Segundo cuatri/MIN/Proyecto/ElectionsPredictor-Complex_Networks") 
 
 def normalize(x: int, values: list) -> int:
     if max(values) - min(values) == 0:
@@ -89,7 +91,7 @@ for graph in graph_list:
 # Asign politician support
 # P_support = sum((support_i + support_j) * norm_weight_i_j)
 for i, graph in enumerate(graph_list, 0):
-    file_name = os.path.join(data_path, 'raw', 'count_list', f"count_list_{graph.graph['date']}.csv")
+    file_name = os.path.join(data_path, 'raw', 'count_list', f"count_list_bin_{graph.graph['date']}.csv")
     df = pd.read_csv(file_name, sep=";", header=0)
 
     for n_j in graph.nodes:
@@ -123,7 +125,7 @@ if not os.path.exists(result_path):
     os.makedirs(result_path)
 
 for graph in graph_list:
-    file_name = f"graph_{graph.graph['date']}.graphml"
+    file_name = f"graph_{graph.graph['date']}_bin.graphml"
     nx.write_graphml_xml(graph, os.path.join(result_path, file_name))
 
 print(f"Finished, data stored in: {result_path}")

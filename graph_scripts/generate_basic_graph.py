@@ -6,17 +6,35 @@
         <f.r.youssef@hotmail.com>
 """
 import os
+import sys
 import networkx as nx
 import pandas as pd
 
 data_path = 'datawarehouse'
-
+word_list = ''
 
 def normalize(x: int, values: list) -> int:
     if max(values) - min(values) == 0:
         return 1
     
     return (x - min(values)) / (max(values) - min(values))
+
+# Word list upon create graphs
+dir_list = os.listdir(os.path.join(data_path, 'raw'))
+dir_list.remove('trends')
+dir_list.remove('tweets')
+if len(dir_list) == 0:
+    print("Please, first create a word list, then run cleanWords.R and finally, run this script")
+    sys.exit()
+
+print("Please, select a word list to create graphs: ")
+for i, _file in enumerate(dir_list, 0):
+    print(f"{i}. {_file}")
+word_list = int(input("Enter a number: "))
+if word_list < 0 or word_list >= len(dir_list):
+    print(f"{word_list} is not an allowed value")
+    sys.exit()
+word_list = dir_list[word_list]
 
 
 # Let's load cities as a dataframe
@@ -89,7 +107,7 @@ for graph in graph_list:
 # Asign politician support
 # P_support = sum((support_i + support_j) * norm_weight_i_j)
 for i, graph in enumerate(graph_list, 0):
-    file_name = os.path.join(data_path, 'raw', 'count_list', f"count_list_bin_{graph.graph['date']}.csv")
+    file_name = os.path.join(data_path, 'raw', word_list, f"{graph.graph['date']}.csv")
     df = pd.read_csv(file_name, sep=";", header=0)
 
     for n_j in graph.nodes:
@@ -118,12 +136,12 @@ for i, graph in enumerate(graph_list, 0):
 
 #write result
 print('Writing results ...')
-result_path = os.path.join(data_path, 'graphs', 'reduced_graphs')
+result_path = os.path.join(data_path, 'graphs', word_list)
 if not os.path.exists(result_path):
     os.makedirs(result_path)
 
 for graph in graph_list:
-    file_name = f"graph_{graph.graph['date']}_bin.graphml"
+    file_name = f"graph_{graph.graph['date']}.graphml"
     nx.write_graphml_xml(graph, os.path.join(result_path, file_name))
 
 print(f"Finished, data stored in: {result_path}")

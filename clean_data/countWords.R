@@ -10,14 +10,30 @@ if (!"tm" %in% rownames(installed.packages())){
 library(tm)
 require(tm)
 
+# word list selection
+wordlist <- list.files(path="datawarehouse/word_list", pattern="*.csv", full.names=FALSE, recursive=FALSE)
+index = 0
+
+while(is.na(index) || index <= 0 || index > length(wordlist)) {
+  print("Please, select a file to count words (the list number):")
+  for (i in 1:length(wordlist)) {
+    print(sprintf("%d. %s", i, wordlist[i]))
+  }
+  index <- suppressWarnings(as.integer(readline()))
+}
+
+wordlist_name <- gsub(".csv", "", wordlist[index])
+print(sprintf("You have selected: %s", wordlist_name))
 
 cities <- read.csv("datawarehouse/top10_population_cities.csv", sep = ";", fileEncoding = "UTF-8", header=TRUE, check.names=TRUE)
 files <- list.files(path="datawarehouse/tweets_cleaned", pattern="*.csv", full.names=TRUE, recursive=FALSE)
 
 
 #load the words list
-words <- read.csv("datawarehouse/word_list/wordList.csv", sep = ";", fileEncoding = "windows-1252", header=TRUE)
-out_path <- "datawarehouse/raw/count_list"
+path <- paste(wordlist_name, ".csv", sep = "")
+path <- paste("datawarehouse/word_list", path, sep = "/")
+words <- read.csv(path, sep = ";", fileEncoding = "windows-1252", header=TRUE)
+out_path <- paste("datawarehouse/raw", wordlist_name, sep = "/")
 
 for (file in files){
   #load cleaning tweets
@@ -128,10 +144,10 @@ for (file in files){
     }
     #load the frecuency terms in a file
     day_results <- strsplit(file, "clean_tweets_")
-    name <- paste("frec_terms", city_name, sep="_")
-    name <- paste(name, "bin.csv", sep="")
+    name <- paste("frec_terms_", city_name, ".csv", sep="")
     day_results <- strsplit(day_results[[1]][2], ".csv")
     out_path1 <- paste(out_path, day_results[[1]][1], sep="/")
+    dir.create(out_path1, recursive = TRUE)
     name <- paste(out_path1, name, sep="/")
     write.table(df_frec_d, row.names = FALSE, file = name, sep = ";", fileEncoding="UTF-8") 
     df <- rbind(df, dff)
@@ -139,8 +155,7 @@ for (file in files){
   
   # Let's save the day "X" results
   day_results <- strsplit(file, "clean_tweets_")
-  day_results <- paste("count_list_bin", day_results[[1]][2], sep="_")
-  day_results <- paste(out_path, day_results, sep="/")
+  day_results <- paste(out_path, day_results[[1]][2], sep="/")
   print(sprintf("Writing in: %s", day_results))
   write.table(df, row.names = FALSE, file = day_results, sep = ";", fileEncoding="UTF-8") 
 }

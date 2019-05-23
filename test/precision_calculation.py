@@ -54,6 +54,6 @@ else:
 
 with open(os.path.join(data_path, 'statistics.txt'), 'w') as file:
     file.write(f'Total sentences = {total}\n')
-    file.write(f'Well classified = {well_classified} --> {well_classified/total * 100}\n')
-    file.write(f'Bad classified = {bad_classified} --> {bad_classified/total * 100}\n')
-    file.write(f'Not classified = {not_classified} --> {not_classified/total * 100}\n')
+    file.write(f'Well classified = {well_classified} --> {well_classified/total * 100}%\n')
+    file.write(f'Bad classified = {bad_classified} --> {bad_classified/total * 100}%\n')
+    file.write(f'Not classified = {not_classified} --> {not_classified/total * 100}%\n')

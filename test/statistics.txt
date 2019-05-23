@@ -1,4 +1,4 @@
 Total sentences = 50
-Well classified = 32 --> 64.0
-Bad classified = 9 --> 18.0
-Not classified = 9 --> 18.0
+Well classified = 32 --> 64.0%
+Bad classified = 9 --> 18.0%
+Not classified = 9 --> 18.0%

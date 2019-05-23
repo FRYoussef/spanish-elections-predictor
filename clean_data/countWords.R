@@ -29,7 +29,7 @@ cities <- read.csv("datawarehouse/top10_population_cities.csv", sep = ";", fileE
 files <- list.files(path="datawarehouse/tweets_cleaned", pattern="*.csv", full.names=TRUE, recursive=FALSE)
 
 
-#load the words list
+#load the word list
 path <- paste(wordlist_name, ".csv", sep = "")
 path <- paste("datawarehouse/word_list", path, sep = "/")
 words <- read.csv(path, sep = ";", fileEncoding = "windows-1252", header=TRUE)
@@ -53,7 +53,7 @@ for (file in files){
     
     #form a corpus with the previous data(the same woeid).
     myCorpus <- Corpus(VectorSource(tweets_city$text))
-    myCorpus<-tm_map(myCorpus,removePunctuation)
+    myCorpus <- tm_map(myCorpus,removePunctuation)
     
     #get the terms and their frequency
     terms <- TermDocumentMatrix(myCorpus)
@@ -69,9 +69,11 @@ for (file in files){
       Support_Podemos = 0,
       Support_VOX = 0
     )
+    
     #initialize dataframe to save the words frecuencies by city and day 
     df_frec_d <- data.frame(matrix(ncol = 2, nrow = 0))
     colnames(df_frec_d) <- c("Word", "Frec")
+    
     #search for each word in the "wordList" in the dataframe of frec terms
     for (j in 1:nrow(words)){
       word <- as.String(words[j,1])
@@ -142,6 +144,7 @@ for (file in files){
       #dataframe with the words and their frequency
       df_frec_d <- rbind(df_frec_d, dff_frec)
     }
+    
     #load the frecuency terms in a file
     day_results <- strsplit(file, "clean_tweets_")
     name <- paste("frec_terms_", city_name, ".csv", sep="")
